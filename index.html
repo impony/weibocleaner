@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>微博环卫工</title>
+<script id="styletpl" type="text/template">
+.gn_logo, .title_area, .tips_wrapper, #pl_leftnav_app, .user_atten, #pl_rightmod_yunying, #pl_relation_recommendGroupMember, #trustPagelet_recom_interestv5, #trustPagelet_zt_hottopicv5, #pl_rightmod_ads35, #pl_rightmod_ads36, #trustPagelet_recom_memberv5, #trustPagelet_recom_allinonev5, #pl_rightmod_noticeboard, .W_tips, .B_mention_me .W_main_r, .B_box_comment_at .W_main_r, .B_box_comment .W_main_r, .B_box_comment_c .W_main_r, .B_message_list .W_main_r, .B_favor_me .W_main_r, .B_send_me .W_main_r, #pl_relation_closefriendPr, #pl_relation_homeCloseFriend, #pl_relation_recommendCloseFriendv5, #pl_rightmod_miyoupr, #pl_rightmod_groups, .global_footer { display: none; }
+
+body { background-image: none; background-color: #353432; }
+.W_miniblog, .W_miniblog_fb { background-image: none !important; background-color: transparent !important; }
+.W_main, .gn_header { width: 750px !important; box-shadow: 0 0 10px #000; }
+	.gn_nav { margin-left: 0 !important; }
+	.WB_global_nav .gn_title .gn_tab i { padding-left: 9px; padding-right: 7px; }
+	.WB_global_nav .gn_setting .gn_tab { padding-left: 5px; padding-right: 7px; width: 16px; }
+.W_miniblog { padding-top: 40px; min-width: 760px; }
+.W_main_a { width: 600px; }
+	.B_myfans .W_main_a, .B_myfollow .W_main_a, .B_myfollow .mylistBox { width: 560px; }
+.W_main_c { background: #FFF; }
+	.B_index .W_main_c, .B_closefriend .W_main_c { padding-top: 5px; }
+.send_weibo { width: 440px; }
+	.send_weibo .input .input_detail { width: 428px; }
+.W_main_r { margin-left: -230px; width: 140px; }
+a.W_gotop { margin-left: 380px; }
+.gn_tips { left: 559px; }
+
+#pl_profile_cover { display: none; }
+.layer_menulist_tags { width: 458px; }
+.profile_tabbig { width: auto !important; }
+.profile_top { min-height: 200px; }
+	.profile_top .pf_head { top: 15px; }
+	.profile_top .pf_info_left { width: 500px; }
+	.profile_top .pf_info_right { margin-left: 0; padding-right: 0; }
+	.profile_top .pf_badge { float: none; display: block; }
+	.profile_top .badge_list { padding-left: 0; }
+		.profile_top .badge_list li { margin-left: 0; margin-right: 5px; }
+.B_profile .W_main_c, .B_profile_fans .W_main_c, .B_profile_info .W_main_c, .B_onefeed .W_main_c, .B_profile_pic .W_main_c, .P_weibo_album .wrapper { float: none; padding-bottom: 0; width: 750px !important; }
+.B_profile .W_main_2r, .B_profile_fans .W_main_2r, .B_profile_info .W_main_2r, .B_onefeed .W_main_2r, .B_profile_pic .W_main_2r { float: none; margin-left: 20px; margin-bottom: 20px; width: 730px !important; }
+.B_onefeed .WB_feed .feed_repeat .repeat .input textarea { width: 576px; }
+.B_profile .WB_feed .repeat .input textarea, .B_onefeed .WB_feed .feed_repeat .input textarea { width: 658px; }
+.prm_app_pic .piclist { width: 670px !important; }
+#pl_profile_accountOut iframe, .P_album_info .album_info { width: 710px !important; }
+
+#ifr_photo, .P_weibo_album .wrapper { width: 750px !important }
+.P_weibo_album { background-color: transparent; }
+
+.profile_top .pf_info_left { float: none; }
+.profile_top .pf_info_right { float: none; width: 500px; }
+.profile_top .pf_verified, .profile_top .pf_verified_info, .profile_top .pf_star_info, .profile_top .pf_lady_info { text-align: left; }
+.W_layer .profile_follow { width: 673px; }
+.photolist img { width: 102px; height: 102px; }
+
+.B_fans_myconn .W_main_c, .B_n_close_friend .W_main_c, .B_fans_watch .W_main_c, .B_n_invite36 .W_main_c { width: 555px; }
+.B_fans_myconn .W_main_r, .B_n_close_friend .W_main_r, .B_fans_watch .W_main_r, .B_n_invite36 .W_main_r, .B_invite .W_main_r { display: none; }
+.B_fans_myconn .W_main, .B_n_close_friend .W_main, .B_fans_watch .W_main, .B_n_invite36 .W_main, .B_invite .W_main, .B_find_fast .W_main { padding-top: 0; }
+.B_fans_myconn .W_miniblog, .B_n_close_friend .W_miniblog, .B_fans_watch .W_miniblog, .B_n_invite36 .W_miniblog, .B_invite .W_miniblog, .B_find_fast .W_miniblog { background: none; }
+.B_fans_myconn .W_main_bg, .B_n_close_friend .W_main_bg, .B_fans_watch .W_main_bg, .B_n_invite36 .W_main_bg, .B_invite .W_main_bg { background: #EEF8FB; }
+.B_find_fast .W_main_bg { background: #FFF; }
+.B_find_fast .W_main_215_r { display: none; }
+
+.B_notice .W_main_r, .B_message_dialogue .W_main_r { display: none; }
+.B_notice .W_main { padding-top: 0; }
+</script>
+<script>
+//onconnect 时 background script 将 styletpl 里的代码发给 injected scripts
+opera.extension.addEventListener("connect", function (event) {
+	var tpl = document.getElementById("styletpl").textContent;
+	event.source.postMessage({"name": "impony", "value": tpl});
+}, false);
+</script>
+</head>
+<body>
+</body>
+</html>
