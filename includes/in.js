@@ -6,21 +6,22 @@
 
 //定义全局变量
 var G_G = {
-	"styleid": "imponystyle"
+	"styleid": "imponystyle",
+	"styleid_narrow": "imponystyle_narrow"
 };
 
 function $_$(id) {
 	return document.getElementById(id);
 }
 
-function reRender(str) {
+function reRender(str, id) {
 	var head = document.head;
-	if($_$(G_G.styleid)) {
+	if($_$(G_G.styleid) && $_$(G_G.styleid_narrow)) {
 		return;
 	}
 	var style = document.createElement("style");
 	style.innerHTML = str;
-	style.id = G_G.styleid;
+	style.id = id;
 	head.appendChild(style);
 }
 
@@ -31,7 +32,11 @@ window.addEventListener("DOMContentLoaded", function () {
 		var msg = event.data;
 		//如果传过来的消息的 name 为某特定值
 		if(msg.name === "impony") {
-			reRender(msg.value);
+			reRender(msg.value[0], G_G.styleid);
+			if(widget.preferences.pagewidth === "narrow") {
+				reRender(msg.value[1], G_G.styleid_narrow);
+			}
+			document.getElementById("custom_style").innerHTML = document.getElementById("custom_style").innerHTML.match(/@import.+/gi)[0].replace(/diy\d+/gi, widget.preferences.pagecolor);
 			if(window.location.host.indexOf("photo.weibo.com") != -1) {
 				document.body.style.backgroundColor = "#FFF";
 			}

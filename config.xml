@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<widget xmlns="http://www.w3.org/ns/widgets" id="http://www.impony.com/?page_id=759" version="0.135">
+<widget xmlns="http://www.w3.org/ns/widgets" id="http://www.impony.com/?page_id=759" version="0.2">
 	<name>微博环卫工</name>
-	<description>将新浪微博网页版杂乱的广告、活动、推介等灰尘全部扫走，还你一个清爽的阅读环境。
-		注：仅适用于最新版的新浪微博。安装后访问新浪微博页面 http://weibo.com，登录后就能看到效果了。
+	<description>将新浪微博网页版的广告、活动、推介等灰尘全部扫走，还你一个清爽的阅读环境。安装后可以设置微博页面整体配色和宽度，访问新浪微博页面 http://weibo.com，登录后就能看到效果了。
 		Change Log
+
+		0.2
+		1、可以设置宽屏或窄屏
+		2、可以设置蓝色或粉色
+		3、过滤掉用户的自定义样式，更清爽
+		4、修正一些 BUG
+
+		0.136
+		去掉“微博推广”和“页底推荐”等广告
 
 		0.135
 		修正“关系中心”、“个人页”等一些 BUG
@@ -13,13 +21,14 @@
 		2、将插件起作用页面延伸到大部分页面
 		3、优化并修正一些 BUG
 
-		0.10
+		0.1
 		在一些访问量较大的页面进行实验性的改动
 	</description>
-	<author href="http://impony.com" email="hi@impony.com">imPony</author>
+	<author href="http://impony.com" email="impony@myopera.com">imPony</author>
 	<license href="http://www.apache.org/licenses/LICENSE-2.0.html">
-		Copyright 2012 imPony
-		仅供个人研究 Opera 插件技术使用，请勿用作商业用途。
+		© 2012-2013 imPony 仅供个人研究 Opera 插件技术使用，请勿用作商业用途。
 	</license>
-	<icon src="icons/ico.png"/>
+	<icon src="icons/ico.png" />
+	<preference name="pagecolor" value="diy003" />
+    <preference name="pagewidth" value="wide" />
 </widget>
