@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<widget xmlns="http://www.w3.org/ns/widgets" id="http://www.impony.com/?page_id=759" version="0.2">
+<widget xmlns="http://www.w3.org/ns/widgets" id="http://www.impony.com/?page_id=759" version="0.21">
 	<name>微博环卫工</name>
 	<description>将新浪微博网页版的广告、活动、推介等灰尘全部扫走，还你一个清爽的阅读环境。安装后可以设置微博页面整体配色和宽度，访问新浪微博页面 http://weibo.com，登录后就能看到效果了。
 		Change Log
 
-		0.2
+		0.21
 		1、可以设置宽屏或窄屏
 		2、可以设置蓝色或粉色
 		3、过滤掉用户的自定义样式，更清爽
