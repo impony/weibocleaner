@@ -4,7 +4,6 @@
 // @include http://photo.weibo.com/*
 // ==/UserScript==
 
-//定义全局变量
 var G_G = {
 	"styleid": "imponystyle",
 	"styleid_narrow": "imponystyle_narrow"
@@ -25,22 +24,30 @@ function reRender(str, id) {
 	head.appendChild(style);
 }
 
-// DOM 加载完成后就立即执行
+function formatSkin(skinid) {
+	var links = document.querySelectorAll("link");
+	var custom_style;
+	for(var i = links.length; i--;) {
+		if(links[i].href.match(/skin\d+/gi)) {
+			links[i].href = links[i].href.replace(/skin\d+/gi, "diy/" + skinid);
+			break;
+		}
+	}
+	if(document.getElementById("custom_style")) {
+		custom_style = document.getElementById("custom_style");
+		custom_style.innerHTML = custom_style.innerHTML.match(/@import.+/gi)[0].replace(/diy\d+/gi, skinid);
+	}
+}
+
 window.addEventListener("DOMContentLoaded", function () {
-	//如果接收到 background script 的消息
 	opera.extension.addEventListener("message", function (event) {
 		var msg = event.data;
-		var custom_style;
-		//如果传过来的消息的 name 为某特定值
 		if(msg.name === "impony") {
 			reRender(msg.value[0], G_G.styleid);
 			if(widget.preferences.pagewidth === "narrow") {
 				reRender(msg.value[1], G_G.styleid_narrow);
 			}
-			try {
-				custom_style = document.getElementById("custom_style");
-				custom_style.innerHTML = custom_style.innerHTML.match(/@import.+/gi)[0].replace(/diy\d+/gi, widget.preferences.pagecolor);
-			} catch(e) {}
+			formatSkin(widget.preferences.pagecolor);
 			if(window.location.host.indexOf("photo.weibo.com") != -1) {
 				document.body.style.backgroundColor = "#FFF";
 			}
