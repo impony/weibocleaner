@@ -1,0 +1,40 @@
+{
+	"name": "微博环卫工",
+	"version": "0.22.15",
+	"manifest_version": 2,
+
+	"description": "新增设置菜单！将新浪微博网页版的广告、活动、推介等灰尘全部扫走，还你一个清爽的阅读环境。安装后访问新浪微博 http://weibo.com，登录后就能看到效果了。",
+	"developer": {
+		"name": "imPony",
+		"url": "http://impony.com"
+	},
+	"icons": {
+		"16": "icons/ico_16.png",
+		"128": "icons/ico.png"
+	},
+
+	"content_scripts": [{
+		"matches": [
+			"http://weibo.com/*",
+			"http://www.weibo.com/*",
+			"http://photo.weibo.com/*"
+		],
+		"js": [
+			"includes/in.js"
+		]
+	}],
+	"options_page": "options.html",
+	"browser_action": {
+		"default_icon": "icons/ico_16.png",
+		"default_title": "设置微博环卫工",
+		"default_popup": "options.html"
+	},
+	"web_accessible_resources" : [
+		"icons/ico.png",
+		"includes/in.js",
+		"includes/options.js"
+	],
+	"permissions": [
+		"storage"
+	]
+}
