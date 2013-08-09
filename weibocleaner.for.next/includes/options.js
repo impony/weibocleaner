@@ -1,6 +1,7 @@
 var t;
-var pagecolor = document.getElementById("pagecolor");
-var pagewidth = document.getElementById("pagewidth");
+var colors = document.getElementById("colors");
+var pagesize = document.getElementById("pagesize");
+
 function showStatus() {
 	var status = document.getElementById("status");
 	clearTimeout(t);
@@ -9,18 +10,36 @@ function showStatus() {
 		status.style.visibility = "hidden";
 	}, 2000);
 }
-pagecolor.addEventListener("change", function() {
-	chrome.storage.local.set({"weibocleaner_pagecolor": this.value});
+
+function changeOption(target) {
+	var selected = target.parentNode.querySelector(".selected");
+	if(selected) {
+		selected.className = "";
+	}
+	target.className = "selected";
 	showStatus();
-}, false);
-pagewidth.addEventListener("change", function() {
-	chrome.storage.local.set({"weibocleaner_pagewidth": this.value});
-	showStatus();
-}, false);
+}
+
+colors.addEventListener("click", function (e) {
+	var target = e.target;
+	if(target.tagName === "LI") {
+		chrome.storage.local.set({"weibocleaner_pagecolor": target.id});
+		changeOption(target);
+	}
+}, "false");
+pagesize.addEventListener("click", function (e) {
+	var target = e.target;
+	if(target.tagName === "LI") {
+		chrome.storage.local.set({"weibocleaner_pagewidth": target.id});
+		changeOption(target);
+	}
+}, "false");
 
 chrome.storage.local.get("weibocleaner_pagecolor", function (fetchedData) {
-	pagecolor.value = fetchedData.weibocleaner_pagecolor ? fetchedData.weibocleaner_pagecolor : pagecolor.options[0].value;
+	var id = fetchedData.weibocleaner_pagecolor ? fetchedData.weibocleaner_pagecolor : colors.querySelector("li").id;
+	document.getElementById(id).className = "selected";
 });
 chrome.storage.local.get("weibocleaner_pagewidth", function (fetchedData) {
-	pagewidth.value = fetchedData.weibocleaner_pagewidth ? fetchedData.weibocleaner_pagewidth : pagewidth.options[0].value;
+	var id = fetchedData.weibocleaner_pagewidth ? fetchedData.weibocleaner_pagewidth : pagesize.querySelector("li").id;
+	document.getElementById(id).className = "selected";
 });
