@@ -1,5 +1,5 @@
 var G_TPL = [
-		".gn_logo, .title_area, .tips_wrapper, #pl_leftnav_app, .user_atten, #pl_rightmod_yunying, #pl_relation_recommendGroupMember, #trustPagelet_recom_interestv5, #trustPagelet_zt_hottopicv5, #pl_rightmod_ads35, #pl_rightmod_ads36, #trustPagelet_recom_memberv5, #trustPagelet_recom_allinonev5, #pl_rightmod_noticeboard, .W_tips, .B_mention_me .W_main_r, .B_box_comment_at .W_main_r, .B_box_comment .W_main_r, .B_box_comment_c .W_main_r, .B_message_list .W_main_r, .B_favor_me .W_main_r, .B_send_me .W_main_r, #pl_relation_closefriendPr, #pl_relation_homeCloseFriend, #pl_relation_recommendCloseFriendv5, #pl_rightmod_miyoupr, #pl_rightmod_groups, .global_footer, .spread_adv, .footer_adv, div[feedtype='ad'], .B_message_box_index .W_main_r, .B_box_msg .W_main_r, .WB_feed .popular_buss, .B_message_box .W_main_r, #trustPagelet_indexright_recom { display: none; }",
+		".gn_logo, .title_area, .tips_wrapper, #pl_leftnav_app, .user_atten, #pl_rightmod_yunying, #pl_relation_recommendGroupMember, #trustPagelet_recom_interestv5, #trustPagelet_zt_hottopicv5, #pl_rightmod_ads35, #pl_rightmod_ads36, #trustPagelet_recom_memberv5, #trustPagelet_recom_allinonev5, #pl_rightmod_noticeboard, .W_tips, .B_mention_me .W_main_r, .B_box_comment_at .W_main_r, .B_box_comment .W_main_r, .B_box_comment_c .W_main_r, .B_message_list .W_main_r, .B_favor_me .W_main_r, .B_send_me .W_main_r, #pl_relation_closefriendPr, #pl_relation_homeclosefriend, #pl_relation_recommendCloseFriendv5, #pl_rightmod_miyoupr, #pl_rightmod_groups, .global_footer, .spread_adv, .footer_adv, div[feedtype='ad'], .B_message_box_index .W_main_r, .B_box_msg .W_main_r, .WB_feed .popular_buss, .B_message_box .W_main_r, #trustPagelet_indexright_recom, .profile_pic_top { display: none; }",
 
 		"body { background-image: none; background-color: #353432; }",
 		".W_miniblog, .W_miniblog_fb { background-image: none !important; background-color: transparent !important; }",
@@ -32,6 +32,7 @@ var G_TPL = [
 		".B_index .comment_list .repeat .input textarea, .B_mention_me .comment_list .repeat .input textarea, .B_send_me .comment_list .repeat .input textarea, .B_closefriend .comment_list .repeat .input textarea { width: 591px; }",
 		".WB_feed .list_pic_list, .WB_feed .list_pic_list .pic_list { width: auto; }",
 		".WB_feed .WB_screen { margin-left: 778px; }",
+		".B_profile .WB_feed .WB_screen { margin-left: 928px; }",
 		".prm_app_pic .piclist { width: auto !important; }",
 		"#pl_profile_accountOut iframe, .P_album_info .album_info { width: 940px !important; }",
 
@@ -68,6 +69,8 @@ var G_TPL_NARROW = [
 		".W_main_c { width: 600px; }",
 		".send_weibo { width: 440px; }",
 		"	.send_weibo .input .input_detail { width: 428px; }",
+		"	.send_weibo .kind_v2 { width: 270px; }",
+		"	.send_weibo .kind_v2 a>i { display: none; }",
 		"a.W_gotop { margin-left: 380px; }",
 
 		"	.profile_top .pf_info_right { float: none; width: 500px; margin-left: 0; padding-right: 0; }",
@@ -82,6 +85,11 @@ var G_TPL_NARROW = [
 		".B_index .comment_list .repeat .input textarea, .B_mention_me .comment_list .repeat .input textarea, .B_send_me .comment_list .repeat .input textarea, .B_closefriend .comment_list .repeat .input textarea { width: 361px; }",
 		".WB_feed .list_pic_list, .WB_feed .list_pic_list .pic_list { width: auto; }",
 		".WB_feed .WB_screen { margin-left: 548px; }",
+		".B_profile .WB_feed .WB_screen { margin-left: 698px; }",
+		".big_comment_list .msg_box .comment { width: 495px; }",
+
+		".PRF_tab_noicon { width: 750px; }",
+		"	.PRF_tab_noicon .pftb_lk { width: 95px; }",
 
 		"#pl_profile_accountOut iframe, .P_album_info .album_info { width: 710px !important; }",
 
@@ -90,6 +98,12 @@ var G_TPL_NARROW = [
 		".send_weibo .kind_detail a { margin-right: 3px; }",
 
 		".fixed_bar { width: 558px; }",
+		"	.fixed_bar .bar_left>a { margin-right: 5px !important; }",
+		"		.fixed_bar .bar_left>a>span { padding: 0 2px !important; }",
+		"		.fixed_bar .bar_left .W_btn_c:nth-child(1) { width: 28px; }",
+		"		.fixed_bar .bar_left .W_btn_c:nth-child(2) { width: 76px; }",
+		".B_myfollow .mylistBox .myfollow_list { width: 247px; }",
+		"	.B_myfollow .mylistBox .myfollow_list:nth-child(2n) { margin-right: 0; }",
 		".B_myfollow .page_fixed_bar { width: 560px; }"
 	].join("");
 
