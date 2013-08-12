@@ -39,7 +39,7 @@ function formatSkin(skinid) {
 	}
 }
 
-window.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function () {
 	opera.extension.addEventListener("message", function (event) {
 		var msg = event.data;
 		if(msg.name === "impony") {
