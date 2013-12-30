@@ -2,11 +2,20 @@
 
 微博环卫工是 Opera 桌面浏览器的一款插件，可以将新浪微博网页版的广告、活动、推介等灰尘全部扫走，还你一个清爽的阅读环境，不管是 Presto 还是 Chromium 内核均可安装，在插件设置菜单中，还可以设置微博主色调和页面宽度。安装后访问新浪微博 http://weibo.com ，登录后就能看到效果了。
 
+## 许可证
+http://www.gnu.org/licenses/gpl.html
+
 ## 插件成品地址
 
 https://addons.opera.com/zh-cn/extensions/details/wei-bo-huan-wei-gong/?display=zh
 
+## 注意
+该插件不再对 Presto 内核的 Opera 提供更新支持（只更新到 0.23 版）。如要使用该插件的最新版，请使用 Webkit 内核的 Opera。
+
 ## 版本更新日志
+
+###### 0.231
+根据新浪微博的界面调整进行一些微调，以便将用户关注数、粉丝数、微博数等重要的信息显示出来。
 
 ###### 0.23 
 1. 修正一些窄屏模式下的显示问题
