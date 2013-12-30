@@ -1,5 +1,5 @@
 var G_TPL = [
-		".gn_logo, .title_area, .tips_wrapper, #pl_leftnav_app, .user_atten, #pl_rightmod_yunying, #pl_relation_recommendGroupMember, #trustPagelet_recom_interestv5, #trustPagelet_zt_hottopicv5, #pl_rightmod_ads35, #pl_rightmod_ads36, #trustPagelet_recom_memberv5, #trustPagelet_recom_allinonev5, #pl_rightmod_noticeboard, .W_tips, .B_mention_me .W_main_r, .B_box_comment_at .W_main_r, .B_box_comment .W_main_r, .B_box_comment_c .W_main_r, .B_message_list .W_main_r, .B_favor_me .W_main_r, .B_send_me .W_main_r, #pl_relation_closefriendPr, #pl_relation_homeclosefriend, #pl_relation_recommendCloseFriendv5, #pl_rightmod_miyoupr, #pl_rightmod_groups, .global_footer, .spread_adv, .footer_adv, div[feedtype='ad'], .B_message_box_index .W_main_r, .B_box_msg .W_main_r, .WB_feed .popular_buss, .B_message_box .W_main_r, #trustPagelet_indexright_recom, .profile_pic_top { display: none; }",
+		".gn_logo, .title_area, .tips_wrapper, #pl_leftnav_app, #pl_rightmod_yunying, #pl_relation_recommendGroupMember, #trustPagelet_recom_interestv5, #trustPagelet_zt_hottopicv5, #pl_rightmod_ads35, #pl_rightmod_ads36, #trustPagelet_recom_memberv5, #trustPagelet_recom_allinonev5, #pl_rightmod_noticeboard, .W_tips, .B_mention_me .W_main_r, .B_box_comment_at .W_main_r, .B_box_comment .W_main_r, .B_box_comment_c .W_main_r, .B_message_list .W_main_r, .B_favor_me .W_main_r, .B_send_me .W_main_r, #pl_relation_closefriendPr, #pl_relation_homeclosefriend, #pl_relation_recommendCloseFriendv5, #pl_rightmod_miyoupr, #pl_rightmod_groups, .global_footer, .spread_adv, .footer_adv, div[feedtype='ad'], .B_message_box_index .W_main_r, .B_box_msg .W_main_r, .WB_feed .popular_buss, .B_message_box .W_main_r, #trustPagelet_indexright_recom, .profile_pic_top { display: none; }",
 
 		"body { background-image: none; background-color: #353432; }",
 		".W_miniblog, .W_miniblog_fb { background-image: none !important; background-color: transparent !important; }",
@@ -20,7 +20,7 @@ var G_TPL = [
 		"#pl_profile_cover { display: none; }",
 		".layer_menulist_tags { width: 458px; }",
 		".profile_tabbig { width: auto !important; }",
-		".profile_top { min-height: 200px; }",
+		".profile_top { min-height: 250px; }",
 		"	.profile_top .pf_head { top: 15px; }",
 		".B_profile .W_main_c, .B_profile_fans .W_main_c, .B_profile_info .W_main_c, .B_onefeed .W_main_c, .B_profile_pic .W_main_c, .P_weibo_album .wrapper { float: none; padding-bottom: 0; width: 980px !important; }",
 		".B_profile .W_main_2r, .B_profile_fans .W_main_2r, .B_profile_info .W_main_2r, .B_onefeed .W_main_2r, .B_profile_pic .W_main_2r { float: none; margin-left: 20px; margin-bottom: 20px; width: 960px !important; }",
@@ -57,7 +57,9 @@ var G_TPL = [
 		".big_comment_list .msg_box .comment { width: 725px; }",
 		".send_private_msgno .senc_input_box textarea { width: 780px; }",
 		".send_private_msg .content { width: 790px; }",
-		".private_dialogue .content { width: 618px; }"
+		".private_dialogue .content { width: 618px; }",
+		".user_atten_l { margin-top: 5px; margin-right: 0; }",
+		"	.user_atten_l li strong { font-size: 12px; }"
 	].join("");
 
 var G_TPL_NARROW = [
