@@ -1,4 +1,5 @@
 var t;
+var iswitch = document.getElementById("switch");
 var colors = document.getElementById("colors");
 var pagesize = document.getElementById("pagesize");
 
@@ -20,6 +21,13 @@ function changeOption(target) {
 	showStatus();
 }
 
+iswitch.addEventListener("click", function (e) {
+	var target = e.target;
+	if(target.tagName === "LI") {
+		chrome.storage.local.set({"weibocleaner_pageswitch": target.id});
+		changeOption(target);
+	}
+}, "false");
 colors.addEventListener("click", function (e) {
 	var target = e.target;
 	if(target.tagName === "LI") {
@@ -35,6 +43,10 @@ pagesize.addEventListener("click", function (e) {
 	}
 }, "false");
 
+chrome.storage.local.get("weibocleaner_pageswitch", function (fetchedData) {
+	var id = fetchedData.weibocleaner_pageswitch ? fetchedData.weibocleaner_pageswitch : iswitch.querySelector("li").id;
+	document.getElementById(id).className = "selected";
+});
 chrome.storage.local.get("weibocleaner_pagecolor", function (fetchedData) {
 	var id = fetchedData.weibocleaner_pagecolor ? fetchedData.weibocleaner_pagecolor : colors.querySelector("li").id;
 	document.getElementById(id).className = "selected";

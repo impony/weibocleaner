@@ -5,17 +5,18 @@
 <title>设置微博环卫工</title>
 <style>
 body { margin: 0; padding: 0; width: 300px; height: 350px; background: #333; font: 16px/1.5 sans-serif; }
-.content { position: absolute; top: 50%; left: 50%; margin: -185px 0 0 -150px; padding: 10px 20px; width: 260px; height: 350px; background: #F5F5F5; border-radius: 10px; box-shadow: 0 0 20px rgba(0, 0, 0, .8); }
+a { color: #666; outline: none; }
+.content { position: absolute; top: 50%; left: 50%; margin: -175px 0 0 -150px; padding: 10px 20px; width: 260px; height: 330px; background: #F5F5F5; box-shadow: 0 0 20px rgba(0, 0, 0, .8); }
 h1 { position: relative; font-size: 18px; font-weight: 400; }
 	h1 img { vertical-align: middle; height: 24px; }
-	.status { position: absolute; right: 0; top: 0; padding: 2px 5px; background: #090; color: #FFF; font-size: 14px; font-weight: 400; border-radius: 5px; }
+	.status { position: absolute; right: 0; top: 0; padding: 2px 5px; background: #090; color: #FFF; font-size: 14px; font-weight: 400; }
 fieldset { position: relative; margin: 20px 0; padding: 50px 0 0; border: none; }
-legend { position: absolute; top: 0; left: 0; padding: 5px 0; width: 260px; border-bottom: 1px solid #CCC; color: #333; }
+legend { display: none; position: absolute; top: 0; left: 0; padding: 5px 0; width: 260px; border-bottom: 1px solid #CCC; color: #333; }
 select { display: none; width: 100%; font-size: 16px; }
-p, footer, footer a { text-align: center; color: #999; font-size: 12px; text-decoration: none; }
+p, footer, footer a { text-align: center; color: #999; font-size: 12px; }
 
-.select { list-style: none; margin: 0; padding: 0; }
-	.select>li { display: inline-block; margin-right: 5px; width: 40px; height: 40px; line-height: 40px; text-align: center; border: 2px solid; color: #666; cursor: pointer; border-radius: 5px; }
+.select { list-style: none; margin: -45px 0 0; padding: 0; }
+	.select>li { display: inline-block; margin-right: 5px; width: 40px; height: 40px; line-height: 40px; text-align: center; border: 2px solid; color: #666; cursor: pointer; }
 	.select>li:last-child { margin-right: 0; }
 	.select>li.selected { color: #444; border-color: #666 !important; }
 </style>
@@ -24,7 +25,23 @@ p, footer, footer a { text-align: center; color: #999; font-size: 12px; text-dec
 <div class="content">
 	<h1><img src="icons/ico.png" /> 设置微博环卫工<span id="status" class="status" style="visibility: hidden;">设置已保存</span></h1>
 	<fieldset>
-		<legend>微博主色调</legend>
+		<legend>开关</legend>
+		<ul id="switch" class="select">
+			<li id="on" style="width: 53%; border: 2px solid #ddd; background: #ddd;">启用插件</li>
+			<li id="off" style="width: 38%; border: 2px solid #ddd; background: #ddd;">禁用</li>
+		</ul>
+	</fieldset>
+
+	<fieldset>
+		<legend>页面宽度</legend>
+		<ul id="pagesize" class="select">
+			<li id="wide" style="width: 53%; border: 2px solid #ddd; background: #ddd;">宽</li>
+			<li id="narrow" style="width: 38%; border: 2px solid #ddd; background: #ddd;">窄</li>
+		</ul>
+	</fieldset>
+
+	<fieldset>
+		<legend>主色调</legend>
 		<ul id="colors" class="select">
 			<li id="diy003" style="border-color: #b5dced; background: #b5dced; color: #008bc8;">蓝</li>
 			<li id="diy001" style="border-color: #d1e3ab; background: #d1e3ab; color: #557d00;">绿</li>
@@ -33,14 +50,7 @@ p, footer, footer a { text-align: center; color: #999; font-size: 12px; text-dec
 			<li id="diy008" style="border-color: #c0c0c2; background: #c0c0c2;">灰</li>
 		</ul>
 	</fieldset>
-	<fieldset>
-		<legend>微博页面宽度</legend>
-		<ul id="pagesize" class="select">
-			<li id="wide" style="width: 53%; border: 2px solid #c0c0c2; background: #c0c0c2;">宽</li>
-			<li id="narrow" style="width: 38%; border: 2px solid #c0c0c2; background: #c0c0c2;">窄</li>
-		</ul>
-	</fieldset>
-	<p>点选设置后刷新微博页面可看到效果</p>
+	<p>点选设置后刷新<a href="http://weibo.com" target="_blank">新浪微博</a>可看到效果</p>
 	<footer>&copy; 2012-2013 <a href="http://impony.com" target="_blank">imPony</a></footer>
 </div>
 <script src="includes/options.js"></script>

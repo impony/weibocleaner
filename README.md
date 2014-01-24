@@ -14,6 +14,10 @@ https://addons.opera.com/zh-cn/extensions/details/wei-bo-huan-wei-gong/?display=
 
 ## 版本更新日志
 
+###### 0.24
+1. 增加插件开关，方便临时关闭微博环卫工。
+2. 设置页面进行了一些微调。
+
 ###### 0.231
 根据新浪微博的界面调整进行一些微调，以便将用户关注数、粉丝数、微博数等重要的信息显示出来。
 

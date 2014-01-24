@@ -109,6 +109,7 @@ var G_TPL_NARROW = [
 		".B_myfollow .page_fixed_bar { width: 560px; }"
 	].join("");
 
+var G_PAGESWITCH;
 var G_PAGECOLOR;
 var G_PAGEWIDTH;
 var G_G = {
@@ -146,20 +147,25 @@ function formatSkin(skinid) {
 	}
 }
 
-reRender(G_TPL, G_G.styleid);
+chrome.storage.local.get("weibocleaner_pageswitch", function (fetchedData) {
+	G_PAGESWITCH = fetchedData.weibocleaner_pageswitch ? fetchedData.weibocleaner_pageswitch : "on";
+	if(G_PAGESWITCH === "on") {
+		reRender(G_TPL, G_G.styleid);
 
-chrome.storage.local.get("weibocleaner_pagecolor", function (fetchedData) {
-	G_PAGECOLOR = fetchedData.weibocleaner_pagecolor ? fetchedData.weibocleaner_pagecolor : "diy003";
-	formatSkin(G_PAGECOLOR);
-});
+		chrome.storage.local.get("weibocleaner_pagecolor", function (fetchedData) {
+			G_PAGECOLOR = fetchedData.weibocleaner_pagecolor ? fetchedData.weibocleaner_pagecolor : "diy003";
+			formatSkin(G_PAGECOLOR);
+		});
 
-chrome.storage.local.get("weibocleaner_pagewidth", function (fetchedData) {
-	G_PAGEWIDTH = fetchedData.weibocleaner_pagewidth ? fetchedData.weibocleaner_pagewidth : "wide";
-	if(G_PAGEWIDTH === "narrow") {
-		reRender(G_TPL_NARROW, G_G.styleid_narrow);
+		chrome.storage.local.get("weibocleaner_pagewidth", function (fetchedData) {
+			G_PAGEWIDTH = fetchedData.weibocleaner_pagewidth ? fetchedData.weibocleaner_pagewidth : "wide";
+			if(G_PAGEWIDTH === "narrow") {
+				reRender(G_TPL_NARROW, G_G.styleid_narrow);
+			}
+		});
+
+		if(window.location.host.indexOf("photo.weibo.com") != -1) {
+			document.body.style.backgroundColor = "#FFF";
+		}
 	}
 });
-
-if(window.location.host.indexOf("photo.weibo.com") != -1) {
-	document.body.style.backgroundColor = "#FFF";
-}
