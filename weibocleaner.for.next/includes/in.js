@@ -1,5 +1,5 @@
 var G_TPL = [
-		".gn_logo, .title_area, .tips_wrapper, #pl_leftnav_app, #pl_rightmod_yunying, #pl_relation_recommendGroupMember, #trustPagelet_recom_interestv5, #trustPagelet_zt_hottopicv5, #pl_rightmod_ads35, #pl_rightmod_ads36, #trustPagelet_recom_memberv5, #trustPagelet_recom_allinonev5, #pl_rightmod_noticeboard, .W_tips, .B_mention_me .W_main_r, .B_box_comment_at .W_main_r, .B_box_comment .W_main_r, .B_box_comment_c .W_main_r, .B_message_list .W_main_r, .B_favor_me .W_main_r, .B_send_me .W_main_r, #pl_relation_closefriendPr, #pl_relation_homeclosefriend, #pl_relation_recommendCloseFriendv5, #pl_rightmod_miyoupr, #pl_rightmod_groups, .global_footer, .spread_adv, .footer_adv, div[feedtype='ad'], .B_message_box_index .W_main_r, .B_box_msg .W_main_r, .WB_feed .popular_buss, .B_message_box .W_main_r, #trustPagelet_indexright_recom, .profile_pic_top { display: none; }",
+		".gn_logo_v2, .title_area, .tips_wrapper, #pl_leftnav_app, #pl_rightmod_yunying, #pl_relation_recommendGroupMember, #trustPagelet_recom_interestv5, #trustPagelet_zt_hottopicv5, #pl_rightmod_ads35, #pl_rightmod_ads36, #trustPagelet_recom_memberv5, #trustPagelet_recom_allinonev5, #pl_rightmod_noticeboard, .W_tips, .B_mention_me .W_main_r, .B_box_comment_at .W_main_r, .B_box_comment .W_main_r, .B_box_comment_c .W_main_r, .B_message_list .W_main_r, .B_favor_me .W_main_r, .B_send_me .W_main_r, #pl_relation_closefriendPr, #pl_relation_homeclosefriend, #pl_relation_recommendCloseFriendv5, #pl_rightmod_miyoupr, #pl_rightmod_groups, .global_footer, .spread_adv, .footer_adv, div[feedtype='ad'], .B_message_box_index .W_main_r, .B_box_msg .W_main_r, .WB_feed .popular_buss, .B_message_box .W_main_r, #trustPagelet_indexright_recom, .profile_pic_top, #pl_rightmod_friends, #pl_rightmod_recomFriends { display: none; }",
 
 		"body { background-image: none; background-color: #353432; }",
 		".W_miniblog, .W_miniblog_fb { background-image: none !important; background-color: transparent !important; }",
@@ -28,7 +28,7 @@ var G_TPL = [
 		"	.pul_list_big, .prm_app_pic { width: auto; }",
 		".B_profile .WB_feed .repeat .input textarea, .B_onefeed .WB_feed .feed_repeat .input textarea { width: 888px; }",
 		".B_profile .comment_list .repeat .input textarea, .B_onefeed .WB_feed .feed_repeat .repeat .input textarea { width: 806px; }",
-		".B_index .WB_feed .repeat .input textarea, .big_comment_list .msg_box .feed_repeat .input textarea, .WB_feed .repeat .input textarea, .B_closefriend .WB_feed .repeat .input textarea { width: 673px; }",
+		".B_index .WB_feed .repeat .input textarea, .big_comment_list .msg_box .feed_repeat .input textarea, .WB_feed .repeat .input textarea, .B_closefriend .WB_feed .repeat .input textarea { width: 678px; }",
 		".B_index .comment_list .repeat .input textarea, .B_mention_me .comment_list .repeat .input textarea, .B_send_me .comment_list .repeat .input textarea, .B_closefriend .comment_list .repeat .input textarea { width: 591px; }",
 		".WB_feed .list_pic_list, .WB_feed .list_pic_list .pic_list { width: auto; }",
 		".WB_feed .WB_screen { margin-left: 778px; }",
@@ -83,7 +83,7 @@ var G_TPL_NARROW = [
 		".B_profile .W_main_2r, .B_profile_fans .W_main_2r, .B_profile_info .W_main_2r, .B_onefeed .W_main_2r, .B_profile_pic .W_main_2r { width: 730px !important; }",
 		".B_profile .WB_feed .repeat .input textarea, .B_onefeed .WB_feed .feed_repeat .input textarea { width: 658px; }",
 		".B_profile .comment_list .repeat .input textarea, .B_onefeed .WB_feed .feed_repeat .repeat .input textarea { width: 576px; }",
-		".B_index .WB_feed .repeat .input textarea, .big_comment_list .msg_box .feed_repeat .input textarea, .WB_feed .repeat .input textarea, .B_closefriend .WB_feed .repeat .input textarea { width: 443px; }",
+		".B_index .WB_feed .repeat .input textarea, .big_comment_list .msg_box .feed_repeat .input textarea, .WB_feed .repeat .input textarea, .B_closefriend .WB_feed .repeat .input textarea { width: 448px; }",
 		".B_index .comment_list .repeat .input textarea, .B_mention_me .comment_list .repeat .input textarea, .B_send_me .comment_list .repeat .input textarea, .B_closefriend .comment_list .repeat .input textarea { width: 361px; }",
 		".WB_feed .list_pic_list, .WB_feed .list_pic_list .pic_list { width: auto; }",
 		".WB_feed .WB_screen { margin-left: 548px; }",
