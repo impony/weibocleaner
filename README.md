@@ -14,6 +14,9 @@ https://addons.opera.com/zh-cn/extensions/details/wei-bo-huan-wei-gong/?display=
 
 ## 版本更新日志
 
+##### 0.26
+修正 @wangxinmu 提到的首页发微博区域右侧个人信息重叠的问题
+
 ##### 0.25
 因为新浪微博调整了LOGO、好友圈侧边栏的结构，所以插件代码需要跟着调整。
 
