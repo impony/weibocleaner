@@ -1,5 +1,5 @@
 var G_TPL = [
-		".gn_logo_v2, .title_area, .tips_wrapper, #pl_leftnav_app, #pl_rightmod_yunying, #pl_relation_recommendGroupMember, #trustPagelet_recom_interestv5, #trustPagelet_zt_hottopicv5, #pl_rightmod_ads35, #pl_rightmod_ads36, #trustPagelet_recom_memberv5, #trustPagelet_recom_allinonev5, #pl_rightmod_noticeboard, .W_tips, .B_mention_me .W_main_r, .B_box_comment_at .W_main_r, .B_box_comment .W_main_r, .B_box_comment_c .W_main_r, .B_message_list .W_main_r, .B_favor_me .W_main_r, .B_send_me .W_main_r, #pl_relation_closefriendPr, #pl_relation_homeclosefriend, #pl_relation_recommendCloseFriendv5, #pl_rightmod_miyoupr, #pl_rightmod_groups, .global_footer, .spread_adv, .footer_adv, div[feedtype='ad'], .B_message_box_index .W_main_r, .B_box_msg .W_main_r, .WB_feed .popular_buss, .B_message_box .W_main_r, #trustPagelet_indexright_recom, .profile_pic_top, #pl_rightmod_friends, #pl_rightmod_recomFriends { display: none; }",
+		".gn_logo_v2, .title_area, .tips_wrapper, #pl_leftnav_app, #pl_relation_recommendGroupMember, #trustPagelet_recom_interestv5, #trustPagelet_zt_hottopicv5, #trustPagelet_recom_memberv5, #trustPagelet_recom_allinonev5, .W_tips, .B_mention_me .W_main_r, .B_box_comment_at .W_main_r, .B_box_comment .W_main_r, .B_box_comment_c .W_main_r, .B_message_list .W_main_r, .B_favor_me .W_main_r, .B_send_me .W_main_r, #pl_relation_closefriendPr, #pl_relation_homeclosefriend, #pl_relation_recommendCloseFriendv5, .global_footer, .spread_adv, .footer_adv, div[feedtype='ad'], .B_message_box_index .W_main_r, .B_box_msg .W_main_r, .WB_feed .popular_buss, .B_message_box .W_main_r, #trustPagelet_indexright_recom, .profile_pic_top, .WB_right_module { display: none; }",
 
 		"body { background-image: none; background-color: #353432; }",
 		".W_miniblog, .W_miniblog_fb { background-image: none !important; background-color: transparent !important; }",
@@ -33,6 +33,7 @@ var G_TPL = [
 		".B_index .comment_list .repeat .input textarea, .B_mention_me .comment_list .repeat .input textarea, .B_send_me .comment_list .repeat .input textarea, .B_closefriend .comment_list .repeat .input textarea { width: 591px; }",
 		".WB_feed .list_pic_list, .WB_feed .list_pic_list .pic_list { width: auto; }",
 		".WB_feed .WB_screen { margin-left: 778px; }",
+		".WB_feed .type_text { margin-left: 692px; }",
 		".B_profile .WB_feed .WB_screen { margin-left: 928px; }",
 		".prm_app_pic .piclist { width: auto !important; }",
 		"#pl_profile_accountOut iframe, .P_album_info .album_info { width: 940px !important; }",
@@ -55,12 +56,15 @@ var G_TPL = [
 		".B_notice .W_main_r, .B_message_dialogue .W_main_r { display: none; }",
 		".B_notice .W_main { padding-top: 0; }",
 
-		".big_comment_list .msg_box .comment { width: 725px; }",
+		".big_comment_list .comment { width: 725px; }",
 		".send_private_msgno .senc_input_box textarea { width: 780px; }",
 		".send_private_msg .content { width: 790px; }",
 		".private_dialogue .content { width: 618px; }",
 		".user_atten_l { margin-top: 5px; margin-right: 0; }",
-		"	.user_atten_l li strong { font-size: 12px; }"
+		"	.user_atten_l li strong { font-size: 12px; }",
+
+		".msg_dialogue_list .msg_dialist_content .msg_diamain_box { width: 615px; }",
+		".msg_dialogue_list .msg_diamain_con .msg_dia_txt, .msg_diamain_con .msg_attachment { width: auto; }"
 	].join("");
 
 var G_TPL_NARROW = [
@@ -88,8 +92,9 @@ var G_TPL_NARROW = [
 		".B_index .comment_list .repeat .input textarea, .B_mention_me .comment_list .repeat .input textarea, .B_send_me .comment_list .repeat .input textarea, .B_closefriend .comment_list .repeat .input textarea { width: 361px; }",
 		".WB_feed .list_pic_list, .WB_feed .list_pic_list .pic_list { width: auto; }",
 		".WB_feed .WB_screen { margin-left: 548px; }",
+		".WB_feed .type_text { margin-left: 462px; }",
 		".B_profile .WB_feed .WB_screen { margin-left: 698px; }",
-		".big_comment_list .msg_box .comment { width: 495px; }",
+		".big_comment_list .comment { width: 495px; }",
 
 		".PRF_tab_noicon { width: 750px; }",
 		"	.PRF_tab_noicon .pftb_lk { width: 95px; }",
@@ -107,7 +112,9 @@ var G_TPL_NARROW = [
 		"		.fixed_bar .bar_left .W_btn_c:nth-child(2) { width: 76px; }",
 		".B_myfollow .mylistBox .myfollow_list { width: 247px; }",
 		"	.B_myfollow .mylistBox .myfollow_list:nth-child(2n) { margin-right: 0; }",
-		".B_myfollow .page_fixed_bar { width: 560px; }"
+		".B_myfollow .page_fixed_bar { width: 560px; }",
+
+		".msg_dialogue_list .msg_dialist_content .msg_diamain_box { width: 388px; }",
 	].join("");
 
 var G_PAGESWITCH;
